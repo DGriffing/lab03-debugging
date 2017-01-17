@@ -1,11 +1,12 @@
 class stringProcessor{
-    private data: string;
-    constructor(input: string){
-        input = data;
+    private data:string;
+    
+    constructor(input:string){
+        input = this.data;
     }
 
     public getString(): string{
-        return data;
+        return this.data;
     }
 
     public setString(data:string){
@@ -14,6 +15,7 @@ class stringProcessor{
 
     public reverse(): void{
         let chars: string[] = this.data.split('');
+        
         for(var i = 1; i< chars.length ; i++){
             let cTmp:string = chars[i];
             chars[i] = chars[chars.length -1];
